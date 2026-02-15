@@ -51,8 +51,8 @@
 
     <!-- Image -->
     <img 
-      src="https://images.unsplash.com/photo-1496747611176-843222e1e57c"
-      class="w-full object-cover h-[600px]"
+      src="1.jpg"
+      class="w-full object-cover h-1060 w-1600"
       alt="Fashion"
     >
 
@@ -102,5 +102,129 @@
     });
 
   </script>
+
+ <div class="container mx-auto p-6 grid lg:grid-cols-3 gap-6">
+
+  <!-- ================= LEFT BLOG POST ================= -->
+  <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow space-y-6">
+
+    <!-- Blog Post -->
+    <div>
+      <h2 class="text-2xl font-bold text-center">TITLE HEADING</h2>
+      <p class="text-center text-gray-600 mt-2">
+        Title description, <span class="font-semibold">May 2, 2016</span>
+      </p>
+
+      <img src="2.jpg" class="w-full mt-6 rounded" alt="Blog Image">
+
+      <p class="mt-6">
+        <span class="font-bold">More Hats!</span> I am crazy about hats these days.
+        Some text about this blog entry. Fashion fashion and mauris neque quam,
+        fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+        euismod placerat.
+      </p>
+
+      <p class="mt-4">
+        Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex justify-between items-center mt-6">
+        <button id="likeBtn" class="border px-4 py-2 hover:bg-gray-200">
+          <i class="fas fa-thumbs-up"></i> Like
+        </button>
+        <button class="bg-black text-white px-4 py-2">
+          Replies <span class="bg-white text-black px-2 ml-1">1</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Comments -->
+    <div id="commentSection" class="mt-6 border-t pt-6 flex gap-4">
+      <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde"
+           class="w-16 h-16 object-cover rounded" alt="Commenter">
+      <div>
+        <h4 class="font-bold">
+          George <span class="text-gray-500 font-normal">May 3, 2016, 6:32 PM</span>
+        </h4>
+        <p>Great blog post! Following</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= RIGHT SIDEBAR ================= -->
+  <div class="space-y-6">
+
+    <!-- About Card -->
+    <div class="bg-black text-white rounded-lg overflow-hidden shadow">
+      <img src="3.jpg" class="w-full rounded-t" alt="Profile Image">
+      <div class="p-4">
+        <h3 class="text-xl font-bold mb-2">My Name</h3>
+        <p class="text-sm">
+          Just me, myself and I, exploring the universe of unknownment.
+          I have a heart of love and an interest of lorem ipsum and mauris
+          neque quam blog.
+        </p>
+      </div>
+    </div>
+
+    <!-- Popular Posts -->
+    <div class="bg-white rounded-lg shadow overflow-hidden">
+      <div class="bg-black text-white p-4 font-bold">Popular Posts</div>
+      <div class="divide-y">
+        <div class="flex items-center gap-4 p-4 hover:bg-gray-100 cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f"
+               class="w-12 h-12 object-cover rounded" alt="Denim">
+          <div>
+            <h4 class="font-semibold">Denim</h4>
+            <p class="text-sm text-gray-600">Sed mattis nunc</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 p-4 hover:bg-gray-100 cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f"
+               class="w-12 h-12 object-cover rounded" alt="Sweaters">
+          <div>
+            <h4 class="font-semibold">Sweaters</h4>
+            <p class="text-sm text-gray-600">Praes tincidunt sed</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 p-4 hover:bg-gray-100 cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d"
+               class="w-12 h-12 object-cover rounded" alt="Workshop">
+          <div>
+            <h4 class="font-semibold">Workshop</h4>
+            <p class="text-sm text-gray-600">Ultricies congue</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 p-4 hover:bg-gray-100 cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f"
+               class="w-12 h-12 object-cover rounded" alt="Trends">
+          <div>
+            <h4 class="font-semibold">Trends</h4>
+            <p class="text-sm text-gray-600">Lorem ipsum dipsum</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advertise -->
+    <div class="bg-white rounded-lg shadow overflow-hidden">
+      <div class="bg-black text-white p-4 font-bold">Advertise</div>
+      <div class="p-4">
+        <img src="https://via.placeholder.com/600x200.png?text=Your+Ad+Here"
+             class="w-full rounded" alt="Advertise Banner">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
 </body>
 </html>
