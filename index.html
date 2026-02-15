@@ -46,6 +46,61 @@
       <span class="bg-black text-white px-2 py-1">Jane's world</span>
     </p>
   </header>
-  
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative max-w-6xl mx-auto">
+
+    <!-- Image -->
+    <img 
+      src="https://images.unsplash.com/photo-1496747611176-843222e1e57c"
+      class="w-full object-cover h-[600px]"
+      alt="Fashion"
+    >
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <!-- Text Content -->
+    <div class="absolute left-10 bottom-20 text-white">
+      <p class="text-xl mb-2">Jane's</p>
+      <h2 class="text-6xl font-bold mb-6">FASHION BLOG</h2>
+      <button id="subscribeBtn"
+        class="bg-gray-300 text-black px-6 py-3 font-semibold hover:bg-white">
+        SUBSCRIBE
+      </button>
+    </div>
+
+  </section>
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+
+    /* ========= SEARCH TOGGLE ========= */
+    const searchToggle = document.querySelector("#searchToggle");
+    const searchBar = document.querySelector("#searchBar");
+
+    searchToggle.addEventListener("click", function() {
+      searchBar.classList.toggle("hidden");
+    });
+
+
+    /* ========= SUBSCRIBE MODAL ========= */
+    const subscribeBtn = document.querySelector("#subscribeBtn");
+    const subscribeModal = document.querySelector("#subscribeModal");
+    const closeModal = document.querySelector("#closeModal");
+
+    subscribeBtn.addEventListener("click", function() {
+      subscribeModal.classList.remove("hidden");
+    });
+
+    closeModal.addEventListener("click", function() {
+      subscribeModal.classList.add("hidden");
+    });
+
+    window.addEventListener("click", function(e) {
+      if (e.target === subscribeModal) {
+        subscribeModal.classList.add("hidden");
+      }
+    });
+
+  </script>
 </body>
 </html>
