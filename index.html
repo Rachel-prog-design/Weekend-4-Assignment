@@ -142,7 +142,7 @@
 
     <!-- Comments -->
     <div id="commentSection" class="mt-6 border-t pt-6 flex gap-4">
-      <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde"
+      <img src="6.jpg"
            class="w-16 h-16 object-cover rounded" alt="Commenter">
       <div>
         <h4 class="font-bold">
@@ -150,9 +150,91 @@
         </h4>
         <p>Great blog post! Following</p>
       </div>
+      </div>
+      <!-- ================= RIGHT SIDE POSTS ================= -->
+<div class="space-y-8">
+
+  <!-- ===== FIRST POST ===== -->
+  <div class="bg-white shadow p-6 space-y-6">
+
+    <div class="text-center">
+      <h2 class="text-xl font-bold uppercase">Title Heading</h2>
+      <p class="text-sm text-gray-600">
+        Title description, <span class="text-red-500">April 23, 2016</span>
+      </p>
+    </div>
+
+    <img src="5.jpg"
+         class="w-full" alt="Man Fashion">
+
+    <div class="text-sm space-y-4">
+      <p>
+        <span class="font-bold">Hats!</span> The trend this summer is hats for men!
+      </p>
+      <p>
+        Some text about this blog entry. Fashion fashion and mauris neque quam,
+        fermentum ut nisl vitae, convallis maximus nisl.
+      </p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-between items-center">
+      <button onclick="likePost(this)"
+        class="border px-4 py-1 text-sm hover:bg-gray-200">
+        👍 Like <span class="ml-1">0</span>
+      </button>
+
+      <button onclick="toggleReplies('post1')"
+        class="bg-black text-white text-sm px-4 py-1">
+        Replies 
+        <span class="bg-white text-black px-2 ml-1">2</span>
+      </button>
     </div>
 
   </div>
+
+
+
+  <!-- ===== SECOND POST ===== -->
+  <div class="bg-white shadow p-6 space-y-6">
+
+    <div class="text-center">
+      <h2 class="text-xl font-bold uppercase">Title Heading</h2>
+      <p class="text-sm text-gray-600">
+        Title description, <span class="text-red-500">April 7, 2016</span>
+      </p>
+    </div>
+
+    <img src="4.jpg"
+         class="w-full" alt="Runway Fashion">
+
+    <div class="text-sm space-y-4">
+      <p>
+        <span class="font-bold">Dont miss!</span> The runway in New York City this weekend is gonna be legendary!
+      </p>
+      <p>
+        Some text about this blog entry. Fashion fashion and mauris neque quam,
+        fermentum ut nisl vitae, convallis maximus nisl.
+      </p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-between items-center">
+      <button onclick="likePost(this)"
+        class="border px-4 py-1 text-sm hover:bg-gray-200">
+        👍 Like <span class="ml-1">0</span>
+      </button>
+
+      <button onclick="toggleReplies('post2')"
+        class="bg-black text-white text-sm px-4 py-1">
+        Replies 
+        <span class="bg-white text-black px-2 ml-1">3</span>
+      </button>
+    </div>
+  </div>
+</div>
+</div> 
+
 
   <!-- ================= RIGHT SIDEBAR ================= -->
   <div class="space-y-6">
@@ -169,7 +251,6 @@
         </p>
       </div>
     </div>
-
     <!-- Popular Posts -->
     <div class="bg-white rounded-lg shadow overflow-hidden">
       <div class="bg-black text-white p-4 font-bold">Popular Posts</div>
@@ -277,6 +358,30 @@
     <i class="fab fa-linkedin hover:text-gray-600 cursor-pointer"></i>
   </div>
 </div>
+<!-- Subscribe -->
+<div class="bg-white mt-10 shadow rounded-lg overflow-hidden">
+  <div class="bg-black text-white p-4 font-bold">
+    Subscribe
+  </div>
+
+  <div class="p-6 space-y-4">
+    <p class="text-sm">
+      Enter your e-mail below and get notified on the latest blog posts.
+    </p>
+
+    <input 
+      type="email"
+      placeholder="Enter e-mail"
+      class="w-full border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-red-400"
+    >
+
+    <button 
+      class="w-full bg-red-500 text-white py-3 hover:bg-red-600 transition">
+      Subscribe
+    </button>
+  </div>
+</div>
+
 
 
   </div>
